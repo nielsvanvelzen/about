@@ -1,7 +1,7 @@
 Coming soon &copy;<br />
 <?php
 if(file_exists(__DIR__ . '/version')){
-	$version = file_get_contents(__DIR__ . '/VERSION');
+	$version = file_get_contents(__DIR__ . '/version');
 	
 	echo '<em>Build from commit <a href="https://github.com/HetIsNiels/Portfolio/commit/' . $version . '">' . $version . '</a></em>';
 }
