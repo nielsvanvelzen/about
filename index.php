@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8" />
+
+	<meta name="author" content="Niels van Velzen" />
+	<meta name="description" content="Portfolio of Niels van Velzen" />
+	<meta name="keywords" content="Niels van Velzen, Niels, van Velzen, portfolio, website, software, full stack developer, developer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
 	<title>Niels van Velzen</title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" />
@@ -10,23 +17,23 @@
 <body>
 	<div class="profile">
 		<header>
-			<img src="assets/img/profile.jpg" class="avatar"/>
+			<img src="assets/img/profile.jpg" class="avatar" alt="Niels van Velzen" />
 			<div class="bio">
 				<h2>Niels van Velzen</h2>
 				<h3>Full Stack Developer</h3>
 			</div>
 		</header>
 		<div class="shortcuts">
-			<a href="https://twitter.com/HetIsNiels" target="_blank" class="shortcut twitter">
+			<a href="https://twitter.com/HetIsNiels" target="_blank" class="shortcut twitter" title="@HetIsNiels on Twitter">
 				<i class="fa fa-twitter"></i>
 			</a>
-			<a href="https://github.com/HetIsNiels" target="_blank" class="shortcut github">
+			<a href="https://github.com/HetIsNiels" target="_blank" class="shortcut github" title="@HetIsNiels on GitHub">
 				<i class="fa fa-github"></i>
 			</a>
-			<a href="https://linkedin.com/in/nielsvanvelzen" target="_blank" class="shortcut linkedin">
+			<a href="https://linkedin.com/in/nielsvanvelzen" target="_blank" class="shortcut linkedin" title="Nielsvanvelzen op LinkedIn">
 				<i class="fa fa-linkedin"></i>
 			</a>
-			<a href="https://facebook.com/HetIsNiels" target="_blank" class="shortcut facebook">
+			<a href="https://facebook.com/HetIsNiels" target="_blank" class="shortcut facebook" title="@HetIsNiels on Facebook">
 				<i class="fa fa-facebook"></i>
 			</a>
 		</div>
