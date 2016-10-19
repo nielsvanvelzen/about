@@ -30,7 +30,7 @@
 			<a href="https://github.com/HetIsNiels" target="_blank" class="shortcut github" title="@HetIsNiels on GitHub">
 				<i class="fa fa-github"></i>
 			</a>
-			<a href="https://linkedin.com/in/nielsvanvelzen" target="_blank" class="shortcut linkedin" title="Nielsvanvelzen op LinkedIn">
+			<a href="https://linkedin.com/in/nielsvanvelzen" target="_blank" class="shortcut linkedin" title="Nielsvanvelzen on LinkedIn">
 				<i class="fa fa-linkedin"></i>
 			</a>
 			<a href="https://facebook.com/HetIsNiels" target="_blank" class="shortcut facebook" title="@HetIsNiels on Facebook">
