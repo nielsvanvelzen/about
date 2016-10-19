@@ -1,2 +1,45 @@
-<h1>Niels van Velzen</h1>
-<em>Website is still in development.</em>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Niels van Velzen</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" />
+	<link rel="stylesheet" href="assets/lib/fontawesome/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+	<div class="profile">
+		<header>
+			<img src="assets/img/profile.jpg" class="avatar"/>
+			<div class="bio">
+				<h2>Niels van Velzen</h2>
+				<h3>Full Stack Developer</h3>
+			</div>
+		</header>
+		<div class="shortcuts">
+			<a href="https://twitter.com/HetIsNiels" target="_blank" class="shortcut twitter">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a href="https://github.com/HetIsNiels" target="_blank" class="shortcut github">
+				<i class="fa fa-github"></i>
+			</a>
+			<a href="https://linkedin.com/in/nielsvanvelzen" target="_blank" class="shortcut linkedin">
+				<i class="fa fa-linkedin"></i>
+			</a>
+			<a href="https://facebook.com/HetIsNiels" target="_blank" class="shortcut facebook">
+				<i class="fa fa-facebook"></i>
+			</a>
+		</div>
+	</div>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-30987193-7', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
