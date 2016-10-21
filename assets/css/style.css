@@ -10,17 +10,17 @@ body {
 }
 
 .profile {
-	border-radius: 2px;
 	width: 100%;
-	max-width: 600px;
+	max-width: 610px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
-	overflow: hidden;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	background-color: #FFFFFF;
 }
 
+/* Header*/
 .profile header {
 	background: #00796B;
 	color: #fdfdfd;
@@ -28,13 +28,13 @@ body {
 	align-items: center;
 	padding: 20px;
 	box-sizing: border-box;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .profile header .avatar {
-	border-radius: 2px;
 	display: block;
 	position: relative;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	width: 125px;
 	height: 125px;
 }
@@ -47,13 +47,14 @@ body {
 	margin: 0 0 0 20px;
 	font-weight: 200;
 	font-size: 26px;
+	color: rgba(255, 255, 255, 0.87);
 }
 
 .profile header .bio h3 {
 	margin: 0 20px;
 	font-size: 16px;
 	font-weight: 200;
-	opacity: 0.8;
+	color: rgba(255, 255, 255, 0.71);
 }
 
 .profile header .bio p {
@@ -61,8 +62,47 @@ body {
 	font-size: 14px;
 }
 
+/* Sections */
+.profile main {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.profile section {
+	padding: 5px 20px;
+}
+
+.profile section h1 {
+	margin: 0;
+	font-weight: 200;
+	font-size: 31px;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.profile section p {
+	margin: 0;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.71);
+	font-size: 14px;
+}
+
+/* Label list */
+.profile ul.labels {
+	list-style: none;
+	padding: 0;
+}
+
+.profile ul.labels li {
+	display: inline-block;
+	background-color: #E4E4E4;
+	border-radius: 16px;
+	padding: 7px 12px;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+/* Shortcuts */
 .profile .shortcuts {
-	background-color: #FFFFFF;
+	margin-top: auto;
 	display: flex;
 	justify-content: space-around;
 	overflow: hidden;
@@ -70,12 +110,12 @@ body {
 
 .profile .shortcuts .shortcut {
 	display: block;
-	min-width: 48px;
 	width: 100%;
 	padding: 5px;
 	font-size: 32px;
 	text-align: center;
 	color: rgba(0, 0, 0, 0.4);
+	box-sizing: border-box;
 }
 
 .profile .shortcuts .shortcut:hover {
@@ -96,4 +136,18 @@ body {
 
 .profile .shortcuts .shortcut.linkedin:hover {
 	background-color: #0073a4;
+}
+
+/* Mobile */
+@media (max-width: 610px) {
+	body {
+		background: none;
+	}
+
+	.profile {
+		width: 100%;
+		height: 100%;
+		box-shadow: none;
+		border-radius: 0;
+	}
 }
