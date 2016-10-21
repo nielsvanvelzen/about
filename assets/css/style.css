@@ -11,7 +11,7 @@ body {
 
 .profile {
 	width: 100%;
-	max-width: 610px;
+	max-width: 600px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -105,17 +105,17 @@ body {
 	margin-top: auto;
 	display: flex;
 	justify-content: space-around;
-	overflow: hidden;
 }
 
 .profile .shortcuts .shortcut {
 	display: block;
-	width: 100%;
+	width: 150px;
 	padding: 5px;
 	font-size: 32px;
 	text-align: center;
 	color: rgba(0, 0, 0, 0.4);
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 .profile .shortcuts .shortcut:hover {
@@ -136,6 +136,24 @@ body {
 
 .profile .shortcuts .shortcut.linkedin:hover {
 	background-color: #0073a4;
+}
+
+/* This effect needs to be redone, I don't like it */
+.shortcut::after{
+	content: attr(data-medium);
+	display: inline-block;
+	height: 32px;
+	font-size: 16px;
+	padding: 5px 0;
+	vertical-align: middle;
+	width: 0;
+	overflow: hidden;
+	text-align: center;
+	transition: width 600ms, margin-left 600ms;
+}
+
+.shortcut:hover::after{
+	width: 90px;
 }
 
 /* Mobile */
