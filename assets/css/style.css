@@ -139,6 +139,7 @@ body {
 }
 
 /* This effect needs to be redone, I don't like it */
+/*
 .shortcut::after{
 	content: attr(data-medium);
 	display: inline-block;
@@ -155,7 +156,7 @@ body {
 .shortcut:hover::after{
 	width: 90px;
 }
-
+*/
 /* Mobile */
 @media (max-width: 610px) {
 	body {
