@@ -5,169 +5,123 @@ html, body {
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	background: url('../img/background.jpg');
 	background-size: cover;
-	text-rendering: optimizeLegibility;
-}
-
-.profile {
-	width: 100%;
-	max-width: 600px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	background-color: #FFFFFF;
+	background-color: #fdfdfd;
 }
 
 /* Header*/
-.profile header {
-	background: #00796B;
+header {
+	background: #00a89a;
 	color: #fdfdfd;
-	display: flex;
-	align-items: center;
-	padding: 20px;
+	text-align: center;
+	padding: 60px 0;
 	box-sizing: border-box;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.profile header .avatar {
-	display: block;
-	position: relative;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	width: 125px;
-	height: 125px;
-}
-
-.profile header .bio {
-	height: 125px;
-}
-
-.profile header .bio h2 {
-	margin: 0 0 0 20px;
+header h2 {
+	margin: 0;
 	font-weight: 200;
-	font-size: 26px;
+	font-size: 40px;
 	color: rgba(255, 255, 255, 0.87);
 }
 
-.profile header .bio h3 {
-	margin: 0 20px;
-	font-size: 16px;
+header h3 {
+	margin: 0;
+	font-size: 28px;
 	font-weight: 200;
 	color: rgba(255, 255, 255, 0.71);
 }
 
-.profile header .bio p {
-	margin: 0 20px;
-	font-size: 14px;
-}
-
 /* Sections */
-.profile main {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+main {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1500px;
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 
-.profile section {
-	padding: 5px 20px;
+main section {
+	grid-column: 1;
 }
 
-.profile section h1 {
+main section:nth-child(2n) {
+	grid-column: 2;
+}
+
+section {
+	padding: 6px 24px;
+}
+
+section h1 {
 	margin: 0;
 	font-weight: 200;
 	font-size: 31px;
 	color: rgba(0, 0, 0, 0.87);
 }
 
-.profile section p {
+section p {
 	margin: 0;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.71);
 	font-size: 14px;
 }
 
-/* Label list */
-.profile ul.labels {
-	list-style: none;
-	padding: 0;
-}
-
-.profile ul.labels li {
-	display: inline-block;
-	background-color: #E4E4E4;
-	border-radius: 16px;
-	padding: 7px 12px;
-	font-size: 13px;
-	color: rgba(0, 0, 0, 0.6);
-}
-
 /* Shortcuts */
-.profile .shortcuts {
-	margin-top: auto;
+.shortcuts {
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-.profile .shortcuts .shortcut {
-	display: block;
-	width: 150px;
-	padding: 5px;
-	font-size: 32px;
-	text-align: center;
-	color: rgba(0, 0, 0, 0.4);
+.shortcuts .shortcut {
+	--color: rgba(0, 0, 0, 0.87);
 	box-sizing: border-box;
 	text-decoration: none;
+	display: flex;
+	padding: 9px;
+	color: var(--color);
+	transition: color 200ms, background-color 200ms;
+	width: calc(100% / 3);
 }
 
-.profile .shortcuts .shortcut:hover {
+.shortcuts .shortcut:hover {
+	background-color: var(--color);
 	color: #FFFFFF;
 }
 
-.profile .shortcuts .shortcut.facebook:hover {
-	background-color: #3d5b99;
+.shortcuts .shortcut em {
+	font-style: normal;
+	line-height: 32px;
 }
 
-.profile .shortcuts .shortcut.twitter:hover {
-	background-color: #00aced;
-}
-
-.profile .shortcuts .shortcut.github:hover {
-	background-color: #000000;
-}
-
-.profile .shortcuts .shortcut.linkedin:hover {
-	background-color: #0073a4;
-}
-
-/* This effect needs to be redone, I don't like it */
-/*
-.shortcut::after{
-	content: attr(data-medium);
-	display: inline-block;
-	height: 32px;
-	font-size: 16px;
-	padding: 5px 0;
-	vertical-align: middle;
-	width: 0;
-	overflow: hidden;
+.shortcuts .shortcut .fa {
+	display: block;
+	width: 32px;
 	text-align: center;
-	transition: width 600ms, margin-left 600ms;
+	font-size: 32px;
+	margin-right: 12px;
 }
 
-.shortcut:hover::after{
-	width: 90px;
+.shortcuts .shortcut.facebook {
+	--color: #3b5998;
 }
-*/
-/* Mobile */
-@media (max-width: 610px) {
-	body {
-		background: none;
-	}
 
-	.profile {
-		width: 100%;
-		height: 100%;
-		box-shadow: none;
-		border-radius: 0;
-	}
+.shortcuts .shortcut.twitter {
+	--color: #1da1f2;
+}
+
+.shortcuts .shortcut.github {
+	--color: #333333;
+}
+
+.shortcuts .shortcut.linkedin {
+	--color: #0077b5;
+}
+
+.shortcuts .shortcut.gitlab {
+	--color: #fc6d26;
+}
+
+.shortcuts .shortcut.telegram {
+	--color: #0088cc;
 }
