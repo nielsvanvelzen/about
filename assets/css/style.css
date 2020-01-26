@@ -4,7 +4,7 @@ html, body {
 
 body {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 	background: url('../img/background.jpg');
 	background-size: cover;
 	text-rendering: optimizeLegibility;
@@ -23,7 +23,7 @@ body {
 
 /* Header*/
 .profile header {
-	background: #00796B;
+	background: #00695C;
 	color: #fdfdfd;
 	display: flex;
 	align-items: center;
