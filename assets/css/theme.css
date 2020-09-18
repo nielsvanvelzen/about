@@ -1,0 +1,66 @@
+/* Quick and dirty CSS reset **/
+body, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box !important;
+}
+
+/* Actual "design" things **/
+body {
+	font-family: 'WorkSans Regular', sans-serif;
+	color: #3c505a;
+	font-size: 14px;
+	line-height: 1.25em;
+	background: radial-gradient(#88d6f0,#2bc9fc);
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 2em;
+}
+
+.container {
+	width: 100%;
+	max-width: 30rem;
+	padding: 1rem;
+	margin: 1rem auto;
+	background-color: #FFFFFF;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container.header {
+	background-color: transparent;
+	box-shadow: none;
+	color: #000000;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 1.6em;
+	padding-bottom: 0.4em;
+	border-bottom: 1px solid black;
+}
+
+p {
+	margin: 0;
+	padding: .5em 0;
+}
+
+ul {
+	margin: 0;
+}
+
+.container.blog .date {
+	display: block;
+	font-style: italic;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: #0e627e;
+}
