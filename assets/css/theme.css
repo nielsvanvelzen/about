@@ -10,10 +10,10 @@ body, h1, h2, h3, h4, h5, h6 {
 /* Actual "design" things **/
 body {
 	font-family: 'WorkSans Regular', sans-serif;
-	color: #3c505a;
+	color: #1A1A1B;
 	font-size: 14px;
 	line-height: 1.25em;
-	background: radial-gradient(#88d6f0,#2bc9fc);
+	background-color: #424242;
 }
 
 h1 {
@@ -26,21 +26,22 @@ h1 {
 	max-width: 30rem;
 	padding: 1rem;
 	margin: 1rem auto;
-	background-color: #FFFFFF;
+	background-color: #F5F5F5;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .container.header {
 	background-color: transparent;
 	box-shadow: none;
-	color: #000000;
+	color: #FFFFFF;
 }
 
 h2 {
 	font-weight: 300;
 	font-size: 1.6em;
 	padding-bottom: 0.4em;
-	border-bottom: 1px solid black;
+	color: #EF6C00;
+	border-bottom: 1px solid #EF6C00;
 }
 
 p {
@@ -58,9 +59,10 @@ ul {
 }
 
 a {
-	color: #000000;
+	color: #0277BD;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #0e627e;
+	text-decoration: underline;
 }

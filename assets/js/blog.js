@@ -16,6 +16,7 @@ function addBlogEntry({ id, title, date, link }) {
 	postEl.dataset.blogPostItem = id.toString();
 	const postTitleEl = document.createElement('a');
 	postTitleEl.classList.add('title');
+	postTitleEl.target = '_blank';
 	postTitleEl.href = link;
 	postTitleEl.textContent = title;
 	postEl.appendChild(postTitleEl);
