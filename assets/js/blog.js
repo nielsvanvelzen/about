@@ -42,15 +42,15 @@ async function updateBlog() {
 	
 	// Counter to show a maximum of 5 posts
 	let i = 0;
-	for (const item of doc.querySelectorAll('item')) {
+	for (const item of doc.querySelectorAll('entry')) {
 		i++;
 		// Limited to show just five posts
 		if (i > 5) break;
 
 		// Get relavant information
 		const title = item.querySelector('title').textContent;
-		const date = new Date(item.querySelector('pubDate').textContent);
-		const link = item.querySelector('link').textContent;
+		const date = new Date(item.querySelector('published').textContent);
+		const link = item.querySelector('link').getAttribute('href');
 
 		// Add entry
 		addBlogEntry({ id: i, title, date, link });
